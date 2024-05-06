@@ -1,4 +1,4 @@
-﻿#pragma warning disable IDE0059, SKEXP0040, SKEXP0043, SKEXP0060	
+﻿#pragma warning disable IDE0059, SKEXP0001, SKEXP0040, SKEXP0043, SKEXP0060	
 
 using Microsoft.Extensions.Configuration;
 using Microsoft.SemanticKernel;
@@ -12,23 +12,23 @@ using System.Threading.Tasks;
 
 // Azure OpenAI keys
 var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
-var deploymentName = config["AZURE_OPENAI_MODEL-GPT3.5"];
+var deploymentName = config["AZURE_OPENAI_MODEL-GPT4"];
 var endpoint = config["AZURE_OPENAI_ENDPOINT"];
 var apiKey = config["AZURE_OPENAI_APIKEY"];
 
 
 // Create a chat completion service
 var builder = Kernel.CreateBuilder();
-//builder.AddAzureOpenAIChatCompletion(deploymentName, endpoint, apiKey);
+builder.AddAzureOpenAIChatCompletion(deploymentName, endpoint, apiKey);
 
-builder.AddOpenAIChatCompletion(
-    modelId: "phi3",
-    endpoint: new Uri("http://w11-eb20asus-docker-desktop:8080"),
-    apiKey: "apikey");
+// builder.AddOpenAIChatCompletion(
+//     modelId: "phi3",
+//     endpoint: new Uri("http://w11-eb20asus-docker-desktop:8080"),
+//     apiKey: "apikey");
 
 Kernel kernel = builder.Build();
 
-var plugInName = "PetsSearch";
+var plugInName = "sklabs";
 var currentAssemblyDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
 var plugInFilepath = Path.Combine(currentAssemblyDirectory, "apimanifest.json");
 
