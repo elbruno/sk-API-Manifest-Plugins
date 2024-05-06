@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sk-testApis", "sk-testApis\sk-testApis.csproj", "{83F76043-12E6-4769-A8D8-0B1DD005C0D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sk-testApis", "sApiManifestPlugInTest\sk-testApis.csproj", "{A7B2FDFE-74AA-4B38-8E19-6DB3F368D991}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{83F76043-12E6-4769-A8D8-0B1DD005C0D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{83F76043-12E6-4769-A8D8-0B1DD005C0D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{83F76043-12E6-4769-A8D8-0B1DD005C0D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{83F76043-12E6-4769-A8D8-0B1DD005C0D6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7B2FDFE-74AA-4B38-8E19-6DB3F368D991}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7B2FDFE-74AA-4B38-8E19-6DB3F368D991}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7B2FDFE-74AA-4B38-8E19-6DB3F368D991}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7B2FDFE-74AA-4B38-8E19-6DB3F368D991}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
