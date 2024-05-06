@@ -23,7 +23,7 @@
         32000,
         32001
     ],
-    "postCreateCommand": "dotnet workload update & dotnet workload install aspire",
+    "postCreateCommand": "sudo dotnet workload update & sudo dotnet workload install aspire",
     "remoteUser": "vscode",
     "hostRequirements": {
         "memory": "8gb",
