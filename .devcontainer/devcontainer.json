@@ -1,5 +1,5 @@
 {
-    "name": "eShopLite - dotnet-ai",
+    "name": "sk - api manifest aspire labs",
     "image": "mcr.microsoft.com/devcontainers/dotnet",
     "features": {
       "ghcr.io/devcontainers/features/dotnet:2": { "version": "8.0"},
@@ -23,7 +23,7 @@
         32000,
         32001
     ],
-    "postCreateCommand": "sudo dotnet workload update & sudo dotnet workload install aspire",
+    "postCreateCommand": "sudo dotnet workload update & sudo dotnet workload install aspire & sudo dotnet workload list",
     "remoteUser": "vscode",
     "hostRequirements": {
         "memory": "8gb",
