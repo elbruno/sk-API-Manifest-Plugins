@@ -14,6 +14,7 @@
                 "ms-vscode.vscode-node-azure-pack",
                 "github.vscode-github-actions",
                 "ms-dotnettools.csdevkit",
+				"ms-dotnettools.vscode-dotnet-runtime",
                 "github.copilot"
             ]
         }
@@ -22,7 +23,7 @@
         32000,
         32001
     ],
-    "postCreateCommand": "cd dotnet-ai && dotnet restore && dotnet build",
+    "postCreateCommand": "dotnet workload update & dotnet workload install aspire",
     "remoteUser": "vscode",
     "hostRequirements": {
         "memory": "8gb",
