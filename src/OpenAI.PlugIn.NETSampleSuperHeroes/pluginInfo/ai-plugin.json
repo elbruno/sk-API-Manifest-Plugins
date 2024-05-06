@@ -1,0 +1,18 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "El Bruno Super Heroes",
+  "name_for_model": "elbrunosuperheroes",
+  "description_for_human": "Search through super heroes catalog.",
+  "description_for_model": "Search and get super heroes information.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "$host/swagger/v1/swagger.yaml",
+    "is_user_authenticated": false
+  },
+  "logo_url": "$host/pluginInfo/logo.png",
+  "contact_email": "support@example.com",
+  "legal_info_url": "http://www.example.com/legal"
+}

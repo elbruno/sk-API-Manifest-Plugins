@@ -1,0 +1,342 @@
+[
+  {
+    "Super Hero Full Name": "Clark Kent",
+    "Alter Egos": "Superman",
+    "Aliases": [
+      "Man of Steel",
+      "Last Son of Krypton"
+    ],
+    "Place of Birth": "Krypton",
+    "First Appearance": "Action Comics #1",
+    "Publisher": "DC Comics",
+    "Occupation": "Reporter",
+    "Base of Operation": "Metropolis"
+  },
+  {
+    "Super Hero Full Name": "Bruce Wayne",
+    "Alter Egos": "Batman",
+    "Aliases": [
+      "The Dark Knight",
+      "The Caped Crusader"
+    ],
+    "Place of Birth": "Gotham City",
+    "First Appearance": "Detective Comics #27",
+    "Publisher": "DC Comics",
+    "Occupation": "Businessman",
+    "Base of Operation": "Gotham City"
+  },
+  {
+    "Super Hero Full Name": "Peter Parker",
+    "Alter Egos": "Spider-Man",
+    "Aliases": [
+      "Spidey",
+      "Web-Slinger"
+    ],
+    "Place of Birth": "New York City, NY",
+    "First Appearance": "Amazing Fantasy #15",
+    "Publisher": "Marvel Comics",
+    "Occupation": "Photographer",
+    "Base of Operation": "New York City"
+  },
+  {
+    "Super Hero Full Name": "Diana Prince",
+    "Alter Egos": "Wonder Woman",
+    "Aliases": [
+      "Princess Diana",
+      "Diana of Themyscira"
+    ],
+    "Place of Birth": "Themyscira",
+    "First Appearance": "All Star Comics #8",
+    "Publisher": "DC Comics",
+    "Occupation": "Ambassador",
+    "Base of Operation": "Washington D.C."
+  },
+  {
+    "Super Hero Full Name": "Tony Stark",
+    "Alter Egos": "Iron Man",
+    "Aliases": [
+      "Shellhead",
+      "The Armored Avenger"
+    ],
+    "Place of Birth": "Long Island, New York",
+    "First Appearance": "Tales of Suspense #39",
+    "Publisher": "Marvel Comics",
+    "Occupation": "Inventor",
+    "Base of Operation": "Stark Tower, New York City"
+  },
+  {
+    "Super Hero Full Name": "Steve Rogers",
+    "Alter Egos": "Captain America",
+    "Aliases": [
+      "Cap",
+      "The First Avenger"
+    ],
+    "Place of Birth": "Manhattan, New York City, NY",
+    "First Appearance": "Captain America Comics #1",
+    "Publisher": "Marvel Comics",
+    "Occupation": "Soldier",
+    "Base of Operation": "The Avengers Mansion, New York City"
+  },
+  {
+    "Super Hero Full Name": "Natasha Romanoff",
+    "Alter Egos": "Black Widow",
+    "Aliases": [
+      "Natalia Romanova",
+      "Nat"
+    ],
+    "Place of Birth": "Stalingrad, USSR",
+    "First Appearance": "Tales of Suspense #52",
+    "Publisher": "Marvel Comics",
+    "Occupation": "Spy",
+    "Base of Operation": "Mobile"
+  },
+  {
+    "Super Hero Full Name": "Barry Allen",
+    "Alter Egos": "The Flash",
+    "Aliases": [
+      "The Scarlet Speedster",
+      "The Fastest Man Alive"
+    ],
+    "Place of Birth": "Central City",
+    "First Appearance": "Showcase #4",
+    "Publisher": "DC Comics",
+    "Occupation": "Forensic Scientist",
+    "Base of Operation": "Central City"
+  },
+  {
+    "Super Hero Full Name": "Hal Jordan",
+    "Alter Egos": "Green Lantern",
+    "Aliases": [
+      "Emerald Knight",
+      "Green Lantern 2814.1"
+    ],
+    "Place of Birth": "Coast City",
+    "First Appearance": "Showcase #22",
+    "Publisher": "DC Comics",
+    "Occupation": "Test Pilot",
+    "Base of Operation": "Oa"
+  },
+  {
+    "Super Hero Full Name": "Arthur Curry",
+    "Alter Egos": "Aquaman",
+    "Aliases": [
+      "King of Atlantis",
+      "Orin"
+    ],
+    "Place of Birth": "Atlantis",
+    "First Appearance": "More Fun Comics #73",
+    "Publisher": "DC Comics",
+    "Occupation": "King",
+    "Base of Operation": "Atlantis"
+  },
+  {
+    "Super Hero Full Name": "Reed Richards",
+    "Alter Egos": "Mr. Fantastic",
+    "Aliases": [
+      "Stretch",
+      "Big Brain"
+    ],
+    "Place of Birth": "Central City, California",
+    "First Appearance": "The Fantastic Four #1",
+    "Publisher": "Marvel Comics",
+    "Occupation": "Scientist",
+    "Base of Operation": "Baxter Building, New York City"
+  },
+  {
+    "Super Hero Full Name": "Susan Storm",
+    "Alter Egos": "Invisible Woman",
+    "Aliases": [
+      "Sue Storm",
+      "Invisible Girl"
+    ],
+    "Place of Birth": "Glenville, Long Island, New York",
+    "First Appearance": "The Fantastic Four #1",
+    "Publisher": "Marvel Comics",
+    "Occupation": "Adventurer",
+    "Base of Operation": "Baxter Building, New York City"
+  },
+  {
+    "Super Hero Full Name": "Johnny Storm",
+    "Alter Egos": "Human Torch",
+    "Aliases": [
+      "Matchstick",
+      "Hothead"
+    ],
+    "Place of Birth": "Glenville, Long Island, New York",
+    "First Appearance": "The Fantastic Four #1",
+    "Publisher": "Marvel Comics",
+    "Occupation": "Adventurer",
+    "Base of Operation": "Baxter Building, New York City"
+  },
+  {
+    "Super Hero Full Name": "Benjamin Grimm",
+    "Alter Egos": "The Thing",
+    "Aliases": [
+      "Ever-Lovin' Blue-Eyed Thing",
+      "Grimm Reaper"
+    ],
+    "Place of Birth": "Yancy Street, Manhattan, New York City, NY",
+    "First Appearance": "The Fantastic Four #1",
+    "Publisher": "Marvel Comics",
+    "Occupation": "Adventurer",
+    "Base of Operation": "Baxter Building, New York City"
+  },
+  {
+    "Super Hero Full Name": "Ororo Munroe",
+    "Alter Egos": "Storm",
+    "Aliases": [
+      "Goddess of the Plains",
+      "Weather Witch"
+    ],
+    "Place of Birth": "New York City, NY",
+    "First Appearance": "Giant-Size X-Men #1",
+    "Publisher": "Marvel Comics",
+    "Occupation": "Teacher",
+    "Base of Operation": "Xavier's School for Gifted Youngsters"
+  },
+  {
+    "Super Hero Full Name": "Jean Grey",
+    "Alter Egos": "Phoenix",
+    "Aliases": [
+      "Marvel Girl",
+      "Red"
+    ],
+    "Place of Birth": "Annandale-on-Hudson, New York",
+    "First Appearance": "X-Men #1",
+    "Publisher": "Marvel Comics",
+    "Occupation": "Teacher",
+    "Base of Operation": "Xavier's School for Gifted Youngsters"
+  },
+  {
+    "Super Hero Full Name": "Scott Summers",
+    "Alter Egos": "Cyclops",
+    "Aliases": [
+      "Slim",
+      "Fearless Leader"
+    ],
+    "Place of Birth": "Anchorage, Alaska",
+    "First Appearance": "X-Men #1",
+    "Publisher": "Marvel Comics",
+    "Occupation": "Teacher",
+    "Base of Operation": "Xavier's School for Gifted Youngsters"
+  },
+  {
+    "Super Hero Full Name": "Logan",
+    "Alter Egos": "Wolverine",
+    "Aliases": [
+      "Weapon X",
+      "Logan"
+    ],
+    "Place of Birth": "Alberta, Canada",
+    "First Appearance": "The Incredible Hulk #180",
+    "Publisher": "Marvel Comics",
+    "Occupation": "Adventurer",
+    "Base of Operation": "Xavier's School for Gifted Youngsters"
+  },
+  {
+    "Super Hero Full Name": "Kurt Wagner",
+    "Alter Egos": "Nightcrawler",
+    "Aliases": [
+      "Fuzzy Elf",
+      "The Great Bamf"
+    ],
+    "Place of Birth": "Bavaria, Germany",
+    "First Appearance": "Giant-Size X-Men #1",
+    "Publisher": "Marvel Comics",
+    "Occupation": "Adventurer",
+    "Base of Operation": "Xavier's School for Gifted Youngsters"
+  },
+  {
+    "Super Hero Full Name": "Piotr Nikolaievitch Rasputin",
+    "Alter Egos": "Colossus",
+    "Aliases": [
+      "Peter Rasputin",
+      "The Steel Colossus"
+    ],
+    "Place of Birth": "Ust-Ordynski Collective, Siberia, USSR",
+    "First Appearance": "Giant-Size X-Men #1",
+    "Publisher": "Marvel Comics",
+    "Occupation": "Artist",
+    "Base of Operation": "Xavier's School for Gifted Youngsters"
+  },
+  {
+    "Super Hero Full Name": "Son Goku",
+    "Alter Egos": "Kakarot",
+    "Aliases": [ "Goku", "Saiyan" ],
+    "Place of Birth": "Planet Vegeta",
+    "First Appearance": "Dragon Ball Chapter #1",
+    "Publisher": "Shueisha",
+    "Occupation": "Martial Artist",
+    "Base of Operation": "Mount Paozu"
+  },
+  {
+    "Super Hero Full Name": "Vegeta",
+    "Alter Egos": "Prince Vegeta",
+    "Aliases": [ "Vegeta IV", "The Prince of Saiyans" ],
+    "Place of Birth": "Planet Vegeta",
+    "First Appearance": "Dragon Ball Chapter #204",
+    "Publisher": "Shueisha",
+    "Occupation": "Martial Artist",
+    "Base of Operation": "Capsule Corporation"
+  },
+  {
+    "Super Hero Full Name": "Piccolo",
+    "Alter Egos": "Ma Junior",
+    "Aliases": [ "Piccolo", "Namekian" ],
+    "Place of Birth": "Planet Namek",
+    "First Appearance": "Dragon Ball Chapter #161",
+    "Publisher": "Shueisha",
+    "Occupation": "Martial Artist",
+    "Base of Operation": "Wastelands"
+  },
+  {
+    "Super Hero Full Name": "Gohan",
+    "Alter Egos": "Son Gohan",
+    "Aliases": [ "The Great Saiyaman", "Son of Goku" ],
+    "Place of Birth": "Earth",
+    "First Appearance": "Dragon Ball Chapter #196",
+    "Publisher": "Shueisha",
+    "Occupation": "Scholar",
+    "Base of Operation": "Satan City"
+  },
+  {
+    "Super Hero Full Name": "Trunks",
+    "Alter Egos": "Future Trunks",
+    "Aliases": [ "Trunks Brief", "Time Traveler" ],
+    "Place of Birth": "West City",
+    "First Appearance": "Dragon Ball Chapter #331",
+    "Publisher": "Shueisha",
+    "Occupation": "Martial Artist",
+    "Base of Operation": "Capsule Corporation"
+  },
+  {
+    "Super Hero Full Name": "Mark Grayson",
+    "Alter Egos": "Invincible",
+    "Aliases": [ "The Teen Titan", "Markus" ],
+    "Place of Birth": "Earth",
+    "First Appearance": "Invincible #1",
+    "Publisher": "Image Comics",
+    "Occupation": "Student",
+    "Base of Operation": "Teen Team Base"
+  },
+  {
+    "Super Hero Full Name": "Nolan Grayson",
+    "Alter Egos": "Omni-Man",
+    "Aliases": [ "The Greatest Hero of the Viltrumite Empire" ],
+    "Place of Birth": "Viltrum",
+    "First Appearance": "Invincible #1",
+    "Publisher": "Image Comics",
+    "Occupation": "Author",
+    "Base of Operation": "Earth"
+  },
+  {
+    "Super Hero Full Name": "Allen the Alien",
+    "Alter Egos": "Allen",
+    "Aliases": [ "Universe's Best", "Tough Guy" ],
+    "Place of Birth": "Unopan",
+    "First Appearance": "Invincible #7",
+    "Publisher": "Image Comics",
+    "Occupation": "Coalition of Planets Fighter",
+    "Base of Operation": "Talescria"
+  }
+]
