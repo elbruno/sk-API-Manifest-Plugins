@@ -10,6 +10,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\PetStoreAPI\PetStoreAPI.csproj" />
+    <ProjectReference Include="..\SuperHeroesAPI\SuperHeroesAPI.csproj" />
   </ItemGroup>
 
   <ItemGroup>
