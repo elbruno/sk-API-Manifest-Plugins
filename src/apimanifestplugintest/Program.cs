@@ -1,26 +1,18 @@
 ﻿#pragma warning disable IDE0059, SKEXP0001, SKEXP0040, SKEXP0043, SKEXP0060	
 
+using HandlebarsDotNet.Helpers;
 using Microsoft.Extensions.Configuration;
 using Microsoft.SemanticKernel;
 using Microsoft.SemanticKernel.Planning;
+using Microsoft.SemanticKernel.Planning.Handlebars;
 using Microsoft.SemanticKernel.Plugins.OpenApi;
 using Microsoft.SemanticKernel.Plugins.OpenApi.Extensions;
 using Spectre.Console;
 using System.Reflection;
+using System.Text.Json;
+using System.Threading.Tasks;
 
-SpectreConsoleOutput.DisplayTitle(".NET - SK APIs);
-
-// execute plan
-var planGoal = @"Find pets in the pets catalog that have super hero names. 
-With the results of the search, show the information for each pet including the pet name, pet type, pet breed and pet age, the pet's owner information, and the super hero details that match the pet's name.
-Show the result of the pets with super hero names as a indented list in plain text. 
-Do not generate HTML or MARKDOWN, just text.";
-
-SpectreConsoleOutput.DisplaySection("CURRENT PROMPT", planGoal);
-SpectreConsoleOutput.DisplaySection("CURRENT SERVICES URLS", new string[] {
-    $"Super Hero API: http://localhost:5188/swagger/v1/swagger.yaml",
-    $"Pet Store API: http://localhost:5100/swagger/v1/swagger.yaml"
-});
+SpectreConsoleOutput.DisplayTitle(".NET - SK APIs");
 
 // Azure OpenAI keys
 var config = new ConfigurationBuilder().AddUserSecrets<Program>().Build();
@@ -37,9 +29,21 @@ builder.AddAzureOpenAIChatCompletion(deploymentName, endpoint, apiKey);
 //     endpoint: new Uri("http://w11-eb20asus-docker-desktop:8080"),
 //     apiKey: "apikey");
 
+builder.Plugins.AddFromType<EmailPlugin>();
 Kernel kernel = builder.Build();
 
 SpectreConsoleOutput.DisplayKernels(kernel);
+SpectreConsoleOutput.DisplaySection("CURRENT SERVICES URLS", new string[] {
+    $"Super Hero API: http://localhost:5188/swagger/v1/swagger.yaml",
+    $"Pet Store API: http://localhost:5100/swagger/v1/swagger.yaml"
+});
+
+var planGoal = @"Find pets in the pets catalog that have super hero names. 
+Then perform 2 actions:
+1. For each pet, redact and send an email to the pet ownwer congratulating the owner on the International Super Hero Pet Day. Share also as additional information some super hero details that match the pet's name in a funny way.
+2. With the results of the search, show the information for each pet including the pet name, pet type, pet breed and pet age, the pet's owner information, and the super hero details that match the pet's name. Show the result of the pets with super hero names as a indented list in plain text. Do not generate HTML or MARKDOWN, just text.";
+
+SpectreConsoleOutput.DisplaySection("CURRENT PROMPT", planGoal);
 
 var plugInName = "sklabs";
 var currentAssemblyDirectory = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
