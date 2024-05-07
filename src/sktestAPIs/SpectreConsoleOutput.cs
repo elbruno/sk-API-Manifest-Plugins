@@ -36,6 +36,7 @@ public static class SpectreConsoleOutput
     {
         AnsiConsole.MarkupLine("[bold green]--------------------------------------------------[/]");
         AnsiConsole.MarkupLine($"[bold green]{sectionTitle}[/]");
+        AnsiConsole.MarkupLine($"");
         // add a line for each section content
         foreach (var line in sectionContent)
         {

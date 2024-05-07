@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel;
 using Microsoft.SemanticKernel;
+using Spectre.Console;
 
 public class EmailPlugin
 {
@@ -11,11 +12,15 @@ public class EmailPlugin
         string body
     )
     {
-        // using spectre console display the email information
-        SpectreConsoleOutput.DisplaySection("EMAIL SENT", new string[] {
-            $"Recipient Emails: {recipientEmails}",
-            $"Subject: {subject}",
-            $"Body: {body}"
-        });
+
+        AnsiConsole.MarkupLine("[bold green]--------------------------------------------------[/]");
+        AnsiConsole.MarkupLine($"[bold green]Send Emails[/]");
+        AnsiConsole.MarkupLine($"");
+        AnsiConsole.MarkupLine($"[bold green]Recipients:[/] {recipientEmails}");
+        AnsiConsole.MarkupLine($"[bold green]Subject:[/] {subject}");
+        AnsiConsole.MarkupLine($"[bold green]Body:[/]");
+        AnsiConsole.MarkupLine($"{body}");
+        AnsiConsole.MarkupLine("[bold green]--------------------------------------------------[/]");
+
     }
 }

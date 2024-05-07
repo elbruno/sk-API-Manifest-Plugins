@@ -85,20 +85,6 @@ var planner = new FunctionCallingStepwisePlanner(
 );
 
 var finalAnswer = "";
-
-//// Synchronous
-//await AnsiConsole.Status()
-//    .StartAsync("Thinking ...", async ctx =>
-//    {
-//        AnsiConsole.MarkupLine("Executing plan ...");
-//        ctx.Spinner(Spinner.Known.Star);
-//        ctx.SpinnerStyle(Style.Parse("green"));
-
-//        result = await planner.ExecuteAsync(kernel, planGoal);
-//        AnsiConsole.MarkupLine("Wrapping up ...");
-//        Thread.Sleep(1000);
-//    });
-
 var result = planner.ExecuteAsync(kernel, planGoal);
 
 AnsiConsole.Status()

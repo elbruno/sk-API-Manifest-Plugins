@@ -28,7 +28,6 @@ Before running this project, make sure you have the following prerequisites:
 - [.NET Aspire Prerequisites](https://learn.microsoft.com/en-us/dotnet/aspire/get-started/build-your-first-aspire-app?tabs=visual-studio#prerequisites)
 
 ## Azure OpenAI Keys
-## Azure OpenAI Keys
 
 The `sktestAPIs` project uses **.NET User Secrets** to store the Azure OpenAI credentials. In the next steps, we will share the commands to set these secrets.
 
@@ -39,6 +38,54 @@ dotnet user-secrets set "AZURE_OPENAI_MODEL-GPT4" "... deployment name ..."
 dotnet user-secrets set "AZURE_OPENAI_ENDPOINT" "... endpoint ..."
 dotnet user-secrets set "AZURE_OPENAI_APIKEY" "... api key ..."
 ```
+
+## SK Tests External Services
+
+The `sktestAPIs` adds plugins to the kernel directly from an API manifest definition. This is the current API manifest used in the project:
+
+```json
+{
+  "applicationName": "SKs Labs",
+  "description": "SKs Labs",
+  "publisher": {
+    "name": "Bruno Capuano",
+    "contactEmail": "bruno@elbruno.com"
+  },
+  "apiDependencies": {
+    "superheroapi": {
+      "apiDescriptionUrl": "http://localhost:5188/swagger/v1/swagger.yaml",
+      "apiDeploymentBaseUrl": "http://localhost:5188/",
+      "requests": [
+        {
+          "method": "GET",
+          "uriTemplate": "/GetAllHeroes"
+        }
+      ]
+    },
+    "petssearch": {
+      "apiDescriptionUrl": "http://localhost:5100/swagger/v1/swagger.yaml",
+      "apiDeploymentBaseUrl": "http://localhost:5100/",
+      "requests": [
+        {
+          "method": "GET",
+          "uriTemplate": "/GetAllPets"
+        }
+      ]
+    }
+  }
+}
+```
+The previous 2 services will help the kernel with the Pets and Super Heroes information. In order to send emails, the kernel add a plugin that emulates a email sender.
+
+```csharp
+// Create a chat completion service
+var builder = Kernel.CreateBuilder();
+builder.AddAzureOpenAIChatCompletion(deploymentName, endpoint, apiKey);
+builder.Plugins.AddFromType<EmailPlugin>();
+Kernel kernel = builder.Build();
+```
+
+The email plugin, will display a table with the email information when is called at runtime from the planner.
 
 ## Run
 
