@@ -82,7 +82,7 @@ app.MapGet("/.well-known/ai-plugin.json", (HttpRequest request) =>
 // return the list of pets
 app.MapGet("/GetAllHeroes", () =>
 {
-    Console.WriteLine("GET ALL HEROES");
+    Console.WriteLine($"{DateTime.Now} - GET ALL HEROES");
     var heroesFile = File.ReadAllText("data/superheroes.json");
     return Results.Json(heroesFile);
 })
@@ -96,7 +96,7 @@ app.MapGet("/GetAllHeroes", () =>
 // add a new super hero
 app.MapPost("/AddSuperHero", async (Superhero newHero) =>
 {
-    Console.WriteLine($"ADDHERO / HERO info: {newHero.SuperHeroFullName}");
+    Console.WriteLine($"{DateTime.Now} - ADDHERO / HERO info: {newHero.SuperHeroFullName}");
     var dataFile = File.ReadAllText("data/superheroes.json");
     var heroes = JsonSerializer.Deserialize<List<Superhero>>(dataFile);
     heroes.Add(newHero);

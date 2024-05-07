@@ -81,8 +81,8 @@ app.MapGet("/.well-known/ai-plugin.json", (HttpRequest request) =>
 
 // return the list of pets
 app.MapGet("/GetAllPets", () =>
-{
-    Console.WriteLine("GET ALL PETS");
+{    
+    Console.WriteLine($"{DateTime.Now} - GETALLPETS");
     var petsFile = File.ReadAllText("data/pets.json");
     return Results.Json(petsFile);
 })
@@ -95,8 +95,8 @@ app.MapGet("/GetAllPets", () =>
 
 // add a new pet
 app.MapPost("/AddPet", async (Root newPet) =>
-{
-    Console.WriteLine($"ADDPET / PET info: {newPet.name}");
+{    
+    Console.WriteLine($"{DateTime.Now} - ADDPET / PET info: {newPet.name}");
     var petsFile = File.ReadAllText("data/pets.json");
     var pets = JsonSerializer.Deserialize<List<Root>>(petsFile);
     pets.Add(newPet);
