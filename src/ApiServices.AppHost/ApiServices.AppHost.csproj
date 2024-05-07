@@ -12,6 +12,7 @@
   <ItemGroup>
     <ProjectReference Include="..\PetStoreAPI\PetStoreAPI.csproj" />
     <ProjectReference Include="..\SuperHeroesAPI\SuperHeroesAPI.csproj" />
+    <ProjectReference Include="..\sktestAPIs\skTestApis.csproj" />
   </ItemGroup>
 
   <ItemGroup>
