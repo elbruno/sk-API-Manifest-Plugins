@@ -55,7 +55,29 @@ With the results of the search, show the information for each pet including the 
 Show the result of the pets with super hero names as a indented list in plain text. 
 Do not generate HTML or MARKDOWN, just text.";
 
+AnsiConsole.Write(new FigletText("SK - API Manifest Test"));
+// show the current prompt in the spectre console
+AnsiConsole.MarkupLine("[bold green]--------------------------------------------------[/]");
+AnsiConsole.MarkupLine("[bold green]CURRENT PROMPT[/]");
+Spectre.Console.AnsiConsole.MarkupLine(planGoal);
+Spectre.Console.AnsiConsole.MarkupLine("[bold green]--------------------------------------------------[/]");
 
+// show current used services urls
+Spectre.Console.AnsiConsole.MarkupLine("[bold green]--------------------------------------------------[/]");
+Spectre.Console.AnsiConsole.MarkupLine("[bold green]CURRENT SERVICES URLS[/]");
+Spectre.Console.AnsiConsole.MarkupLine($"Super Hero API: http://localhost:5188/swagger/v1/swagger.yaml");
+Spectre.Console.AnsiConsole.MarkupLine($"Pet Store API: http://localhost:5100/swagger/v1/swagger.yaml");
+Spectre.Console.AnsiConsole.MarkupLine("[bold green]--------------------------------------------------[/]");
+
+
+// confirm in the spectre console to run this prompt
+var confirm = AnsiConsole.Confirm("Do you want to run this prompt?");
+if (!confirm)
+{
+    AnsiConsole.MarkupLine("[bold red]Prompt execution cancelled[/]");
+    return;
+}
+Spectre.Console.AnsiConsole.MarkupLine("[bold green]--------------------------------------------------[/]");
 
 // create planner
 var planner = new FunctionCallingStepwisePlanner(
