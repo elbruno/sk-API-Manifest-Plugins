@@ -8,11 +8,17 @@ _Learn how to add plugins from API Manifest to Semantic Kernel in minutes._ ✨
 
 This is a quickstart to add plugins to a Semantic Kernel kernel directly from an API Manifest. 
 
-## TL;DR
+## Scenario
+
+In this scenario, we will assume that there are **public APIs with information about super heroes, and a pet database with information about pets and their owner information**. 
+
+There is a fictitious **Super Hero Pet Day**, so the owner of a Pet Store will trigger a plan to find which clients have pets with super hero names. 
+
+The plan will detect these pets and send an email congratulating them for the Super Hero Pet Day with information about their pet name super hero.
+
+## TL;DR: API Manifest Plugins
 
 **API Manifest Plugins** for Semantic Kernel allows developers to efficiently import plugins from OpenAPI documents. It addresses the challenge of importing large API descriptions, like Microsoft Graph, by packaging subsets of APIs together. The API Manifest is a document detailing an application's API dependencies, including links to API descriptions, requests made by the application, and their authorization requirements.
-
-The page also outlines a scenario where these plugins are utilized to create consistent Markdown and HTML tables from email content, using the GitHub API for consistent HTML output. It highlights the flexibility of Semantic Kernel's plugin infrastructure and invites feedback and contributions from developers on the Semantic Kernel GitHub Discussion Channel. **Engagement with the community** and **future enhancements** like automated API Manifest file generation are also mentioned.
 
 More information [Introducing API Manifest Plugins for Semantic Kernel](https://devblogs.microsoft.com/semantic-kernel/introducing-api-manifest-plugins-for-semantic-kernel-2/?WT.mc_id=academic-00000-brunocapuano)
 
@@ -22,9 +28,10 @@ Before running this project, make sure you have the following prerequisites:
 
 - [.NET 8](https://dotnet.microsoft.com/download/dotnet/8.0)
 - [Visual Studio 2022](https://visualstudio.microsoft.com) or [Visual Studio Code](https://code.visualstudio.com/)
-- Access to OpenAI APIs or (Azure OpenAI Services)[https://learn.microsoft.com/en-us/azure/ai-services/openai/overview?WT.mc_id=academic-00000-brunocapuano]
+- Access to OpenAI APIs or [Azure OpenAI Services](https://learn.microsoft.com/en-us/azure/ai-services/openai/overview?WT.mc_id=academic-00000-brunocapuano)
 
 ### Optional for the Aspire demo
+
 - [.NET Aspire Prerequisites](https://learn.microsoft.com/en-us/dotnet/aspire/get-started/build-your-first-aspire-app?tabs=visual-studio#prerequisites)
 
 ## Azure OpenAI Keys
