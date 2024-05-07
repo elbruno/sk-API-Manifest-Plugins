@@ -84,10 +84,42 @@ var planner = new FunctionCallingStepwisePlanner(
     }
 );
 
-var result = await planner.ExecuteAsync(kernel, planGoal);
+var finalAnswer = "";
+
+//// Synchronous
+//await AnsiConsole.Status()
+//    .StartAsync("Thinking ...", async ctx =>
+//    {
+//        AnsiConsole.MarkupLine("Executing plan ...");
+//        ctx.Spinner(Spinner.Known.Star);
+//        ctx.SpinnerStyle(Style.Parse("green"));
+
+//        result = await planner.ExecuteAsync(kernel, planGoal);
+//        AnsiConsole.MarkupLine("Wrapping up ...");
+//        Thread.Sleep(1000);
+//    });
+
+var result = planner.ExecuteAsync(kernel, planGoal);
+
+AnsiConsole.Status()
+    .Start("Processing plan ...", ctx =>
+    {
+        AnsiConsole.MarkupLine("Processing plan ...");        
+        while (!result.IsCompleted)
+        {
+            ctx.Spinner(Spinner.Known.Star);
+            ctx.SpinnerStyle(Style.Parse("green"));
+            ctx.Status($"Plan current status: {result.Status}");
+            Thread.Sleep(1000);
+        }
+    });
+
+// if result is completed get the final answer
+if (result.IsCompleted)
+    finalAnswer = result.Result.FinalAnswer;
 
 SpectreConsoleOutput.DisplaySection("CURRENT PROMPT", planGoal);
-SpectreConsoleOutput.DisplaySection("FINAL ANSWER", result.FinalAnswer);
+SpectreConsoleOutput.DisplaySection("FINAL ANSWER", finalAnswer);
 
 // confirm to see plan details
 confirm = AnsiConsole.Confirm("Do you want to see the plan details?");
@@ -98,4 +130,4 @@ if (!confirm)
 }
 AnsiConsole.MarkupLine("[bold green]--------------------------------------------------[/]");
 
-SpectreConsoleOutput.DisplayPlan(result);
+SpectreConsoleOutput.DisplayPlan(result.Result);
